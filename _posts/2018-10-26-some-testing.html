@@ -1,0 +1,32 @@
+----
+title: Testing some of the F# workflow.
+----
+<p>Let's say that we have the following definition:</p>
+<table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l">1: </span>
+</pre></td>
+<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span class="k">let</span> <span onmouseout="hideTip(event, 'fs1', 1)" onmouseover="showTip(event, 'fs1', 1)" class="f">add</span> <span onmouseout="hideTip(event, 'fs2', 2)" onmouseover="showTip(event, 'fs2', 2)" class="i">a</span> <span onmouseout="hideTip(event, 'fs3', 3)" onmouseover="showTip(event, 'fs3', 3)" class="i">b</span> <span class="o">=</span> <span onmouseout="hideTip(event, 'fs2', 4)" onmouseover="showTip(event, 'fs2', 4)" class="i">a</span> <span class="o">+</span> <span onmouseout="hideTip(event, 'fs3', 5)" onmouseover="showTip(event, 'fs3', 5)" class="i">b</span>
+</code></pre></td>
+</tr>
+</table>
+<p>That looks like a function that takes 2 arguments,
+however we must remember that F# curries functions
+by default and therefore the above definition is equivalent to the following:</p>
+<table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l">1: </span>
+<span class="l">2: </span>
+<span class="l">3: </span>
+<span class="l">4: </span>
+</pre></td>
+<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span class="k">let</span> <span onmouseout="hideTip(event, 'fs4', 6)" onmouseover="showTip(event, 'fs4', 6)" class="f">add&#39;</span> <span onmouseout="hideTip(event, 'fs2', 7)" onmouseover="showTip(event, 'fs2', 7)" class="i">a</span> <span class="o">=</span>
+    <span class="k">let</span> <span onmouseout="hideTip(event, 'fs5', 8)" onmouseover="showTip(event, 'fs5', 8)" class="f">add&#39;&#39;</span> <span onmouseout="hideTip(event, 'fs3', 9)" onmouseover="showTip(event, 'fs3', 9)" class="i">b</span> <span class="o">=</span>
+        <span onmouseout="hideTip(event, 'fs2', 10)" onmouseover="showTip(event, 'fs2', 10)" class="i">a</span> <span class="o">+</span> <span onmouseout="hideTip(event, 'fs3', 11)" onmouseover="showTip(event, 'fs3', 11)" class="i">b</span>
+    <span onmouseout="hideTip(event, 'fs5', 12)" onmouseover="showTip(event, 'fs5', 12)" class="f">add&#39;&#39;</span>
+</code></pre></td>
+</tr>
+</table>
+
+
+<div class="tip" id="fs1">val add : a:int -&gt; b:int -&gt; int<br /><br />Full name: 2018-10-26-some-testing.add</div>
+<div class="tip" id="fs2">val a : int</div>
+<div class="tip" id="fs3">val b : int</div>
+<div class="tip" id="fs4">val add&#39; : a:int -&gt; (int -&gt; int)<br /><br />Full name: 2018-10-26-some-testing.add&#39;</div>
+<div class="tip" id="fs5">val add&#39;&#39; : (int -&gt; int)</div>
