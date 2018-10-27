@@ -21,13 +21,12 @@ published: true
 
         {% if page.comments %}
         <div id="disqus_thread"></div>
-
         <script>
             var disqus_config = function () {
                 this.page.url = '{{ page.url | absolute_url }}';
                 this.page.identifier = '{{ page.url | absolute_url }}';
             };
-            (function () { // DON'T EDIT BELOW THIS LINE
+            (function () {
                 var d = document, s = d.createElement('script');
                 s.src = 'https://garethhubball.disqus.com/embed.js';
                 s.setAttribute('data-timestamp', +new Date());
@@ -41,7 +40,6 @@ published: true
 
     {% include footer.html %}
     <script type="text/javascript" src="{{ "/assets/tips.js" | prepend: site.baseurl | prepend: site.url }}"></script>
-    <script id="dsq-count-scr" src="//garethhubball.disqus.com/count.js" async></script>
 </body>
 
 </html>
