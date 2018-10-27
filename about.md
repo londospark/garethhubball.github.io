@@ -1,5 +1,6 @@
 ---
 layout: default
+title: About Me
 ---
 
 ## Welcome to my corner of the web.
