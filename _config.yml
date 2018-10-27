@@ -4,5 +4,7 @@ author: Gareth Hubball
 plugins:
   - jekyll-remote-theme
 
+url: https://garethhubball.com
+
 remote_theme: heiswayi/the-plain
 exclude: [.paket]
