@@ -5,6 +5,7 @@ plugins:
   - jekyll-remote-theme
 
 url: https://garethhubball.com
+logo_url: assets/logo.png
 
 remote_theme: heiswayi/the-plain
 exclude: [.paket]
