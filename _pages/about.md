@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 ## Welcome to my corner of the web.
 
 I've recently started streaming some development on [Twitch](https://twitch.tv/garethhubball) and thought that it might be a good idea to have somewhere that I can post up some companion posts as well as other random musings.
