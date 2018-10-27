@@ -3,6 +3,7 @@
 (*---
 title: Partial Application in F#
 updated: 2018-10-27
+comments: true
 ---*)
 
 (**
