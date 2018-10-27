@@ -3,8 +3,8 @@ open System.IO
 
 let rec replaceFrontMatter lines =
     match lines with
-    | "(*----" :: xs -> "----" :: (replaceFrontMatter xs)
-    | "----*)" :: xs -> "----" :: (replaceFrontMatter xs)
+    | "(*---" :: xs -> "---" :: (replaceFrontMatter xs)
+    | "---*)" :: xs -> "---" :: (replaceFrontMatter xs)
     | x :: xs -> x :: (replaceFrontMatter xs)
     | [] -> []
 

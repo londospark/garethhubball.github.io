@@ -1,8 +1,8 @@
 
 (*** raw ***)
-(*----
+(*---
 title: Testing some of the F# workflow.
-----*)
+---*)
 
 (**
 Let's say that we have the following definition:
