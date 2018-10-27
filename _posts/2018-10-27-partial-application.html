@@ -97,7 +97,8 @@ functions to do both. Let's not though, we're not interested in that kind of dup
 <code>doesSomethingWithNoLogging</code> and <code>doesSomething</code> are all of type <code>int -&gt; int</code>. They're all drop-in replacements for each other.
 The eagle-eyed among you might have spotted that we've used partial application another time: <code>printfn "%s"</code> - that's because printfn
 doesn't take a string, it takes some <code>Printf.TextWriterFormat</code> with a generic type, that's another post though.</p>
-<p>Hopefully you now understand the idea behind partial application, how currying enables it and how injecting behaviour can clean up your</p>
+<p>Hopefully you now understand the idea behind partial application, how currying enables it and how injecting behaviour can clean up your
+codebase significantly.</p>
 
 
 <div class="tip" id="fs1">val add : a:int -&gt; b:int -&gt; int<br /><br />Full name: 2018-10-27-partial-application.add</div>

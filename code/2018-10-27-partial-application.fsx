@@ -95,5 +95,5 @@ The eagle-eyed among you might have spotted that we've used partial application 
 doesn't take a string, it takes some `Printf.TextWriterFormat` with a generic type, that's another post though.
 
 Hopefully you now understand the idea behind partial application, how currying enables it and how injecting behaviour can clean up your
-
+codebase significantly.
 *)
