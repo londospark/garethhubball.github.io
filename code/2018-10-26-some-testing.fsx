@@ -2,7 +2,7 @@
 (*** raw ***)
 (*---
 title: Testing some of the F# workflow.
-updated:
+updated: 2018-10-26
 ---*)
 
 (**
