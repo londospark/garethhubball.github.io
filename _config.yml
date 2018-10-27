@@ -9,3 +9,23 @@ logo_url: assets/logo.png
 
 remote_theme: heiswayi/the-plain
 exclude: [.paket]
+
+permalink: /:title # Post permalink
+timezone: Europe/London
+
+defaults:
+  -
+    scope:
+      path:         ""
+    values:
+      layout:       "null"
+  -
+    scope:
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      type:         "posts"
+    values:
+      layout:       "post"
