@@ -1,10 +1,12 @@
 module Filefixer
 open System.IO
+open System
 
 let rec replaceFrontMatter lines =
     match lines with
     | "(*---" :: xs -> "---" :: (replaceFrontMatter xs)
     | "---*)" :: xs -> "---" :: (replaceFrontMatter xs)
+    | "updated:" :: xs -> (sprintf "updated %s" <| DateTime.Now.ToString("yyyy-MM-dd HH:mm")) :: (replaceFrontMatter xs)
     | x :: xs -> x :: (replaceFrontMatter xs)
     | [] -> []
 

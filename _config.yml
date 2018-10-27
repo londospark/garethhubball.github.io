@@ -13,6 +13,9 @@ exclude: [.paket]
 permalink: /:title # Post permalink
 timezone: Europe/London
 
+sass:
+    style:          :compressed
+
 defaults:
   -
     scope:
