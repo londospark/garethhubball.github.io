@@ -8,7 +8,7 @@ url: https://garethhubball.com
 logo_url: assets/logo.png
 
 remote_theme: heiswayi/the-plain
-exclude: [.paket]
+exclude: [.paket, filefixer, code, packages, paket-files, Gemfile, Gemfile.lock, paket.dependencies, paket.lock, preview.bat, publish.bat]
 
 permalink: /:title # Post permalink
 timezone: Europe/London
