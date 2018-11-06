@@ -23,6 +23,9 @@
       padding: 35px 50px;
     }
   }
+  #navbar {
+    margin-top: 0px;
+  }
   h1,
   h2,
   h3,
@@ -80,14 +83,8 @@
   }
   .logo {
     position: relative;
-    margin: 0 auto 35px;
+    margin: 10 auto 10px;
     text-align: center;
-    animation-duration: 0.7s;
-    animation-fill-mode: both;
-    animation-name: bounce;
-    -webkit-animation-duration: 0.7s;
-    -webkit-animation-fill-mode: both;
-    -webkit-animation-name: bounce;
     a {
       background: #ddd url("logo_wrapper.png");
       color: #000;
@@ -223,6 +220,15 @@
   iframe {
     width: 100%;
   }
+  .divider-narrow {
+    background: #ddd;
+    background: -webkit-gradient(linear,left top,right top,from(rgba(255,255,255,0)),color-stop(#ccc),to(rgba(255,255,255,0)));
+    background: -webkit-linear-gradient(left,rgba(255,255,255,0),#ccc,rgba(255,255,255,0));
+    background: linear-gradient(to right,rgba(255,255,255,0),#ccc,rgba(255,255,255,0));
+    height: 1px;
+    margin: 2em auto;
+    max-width: 800px;
+  }
   article {
     max-width: 800px;
     margin: 0 auto;
@@ -307,7 +313,7 @@
   .page-navigation,
   .footer {
     text-align: center;
-    max-width: 500px;
+    max-width: 800px;
     margin: 0 auto;
     font-size: 0.8rem;
   }

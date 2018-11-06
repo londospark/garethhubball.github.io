@@ -1,0 +1,9 @@
+pages:
+  - title: About Me
+    url: /
+
+  - title: Blog
+    url: blog
+
+  - title: Streaming
+    url: streaming
