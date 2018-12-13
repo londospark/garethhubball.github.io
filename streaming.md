@@ -9,9 +9,9 @@ title: Streaming
 
 | 6PM Europe/London on: | Topic                 |
 |-----------------------|-----------------------|
-| Tuesday               | Working on TwitchDeck |
-| Friday                | F# Fundamentals       |
-| Sunday                | Working on TwitchDeck |
+| Tuesday               | F# or Rust work       |
+| Friday                | F# or Rust work       |
+| Sunday                | F# or Rust work       |
 
 ## TwitchDeck
 
